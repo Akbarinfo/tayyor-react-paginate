@@ -1,0 +1,123 @@
+.main {
+  &__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 55px;
+    color: #4c5a9b;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 365px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px -5px rgb(0 0 0 / 30%);
+    overflow: hidden;
+  }
+
+  &__imgbox {
+    height: 200px;
+
+    & img {
+      object-fit: cover;
+    }
+  }
+
+  &__box {
+    padding: 25px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  &__item-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__link {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #4c5a9b;
+    border-radius: 8px;
+    color: #4c5a9b;
+    font-size: 18px;
+    line-height: 23px;
+    color: #4c5a9b;
+    padding: 8px 35px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background-color: #4c5a9b;
+      color: #fff;
+    }
+  }
+
+  &__date {
+    display: block;
+    background-color: #4c5a9b;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    padding: 3px 14px;
+  }
+
+  &__pagbox {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 25px 0;
+
+    & li > a, 
+    & .previous > a,
+    & .next > a {
+      display: block;
+      border: 1px solid #4c5a9b;
+      border-radius: 100%;
+      border-radius: 0.4rem;
+      font-weight: 700;
+      color: #4c5a9b;
+      padding: 3px 15px;
+      margin: 0 10px;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    & .disabled > a {
+      border-color: #aaa;
+      color: #aaa;
+    }
+
+    & li > a {
+      margin: 0 4px;
+      padding: 5px 10px;
+
+      &:hover {
+        color: #aaa;
+      }
+    }
+
+    & .selected > a {
+      color: #aaa;
+    }
+  }
+}
